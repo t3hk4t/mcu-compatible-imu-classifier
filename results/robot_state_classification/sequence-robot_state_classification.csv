@@ -1,0 +1,2 @@
+step,run_name,sequence_name,dataset_path,normalize_dataset,train_test_split,learning_rate,momentum,weight_decay,batch_size,model,sensor_axis,output_size,loss_function,optimizer,epochs,debug,buffer_size,is_cuda,continue_training,early_stopping_patience,early_stopping_param,early_stopping_delta_percent,train_loss,test_loss,best_accuracy
+1464,run_1647868560.97141-22-03-21--13-16-00,robot_state_classification,,False,0.7,0.0001,0.95,2e-05,64,cnn,6,4,CrossEntropyLoss,RAdam,10000,True,200,True,False,10,test_loss,0.005,0.004576578352741004,0.06026012692242288
