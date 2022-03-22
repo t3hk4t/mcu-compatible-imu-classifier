@@ -27,7 +27,7 @@ The main.py in the root of the project contains a parser for main.py arguments.
 
 The optimizer and loss function naming should follow the pascal case. You can find the usable optimization functions and loss functions here https://pytorch.org/docs/stable/nn.html. 
 
-## Running the model
+## Training the model
 
 To start training simply run main.py in the root folder of the project.
 
