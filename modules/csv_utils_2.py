@@ -39,7 +39,8 @@ class CsvUtils2():
                             not isinstance(each_dict[key], str) and \
                             not isinstance(each_dict[key], np.float) and \
                             not isinstance(each_dict[key], np.int) and \
-                            not isinstance(each_dict[key], np.float32):
+                            not isinstance(each_dict[key], np.float32) and \
+                            not isinstance(each_dict[key], list):
                         del each_dict[key]
 
             for path_csv in [path_local_csv, path_global_csv]:

@@ -7,10 +7,10 @@ from utils.analytics import SizeEstimator
 
 
 class Model(nn.Module):
-    def __init__(self, args):
+    def __init__(self, args, in_channels):
         super(Model, self).__init__()
         self.name = 'Linear NN'
-        self.linear1 = torch.nn.Linear(args.sensor_axis * args.buffer_size, 8)
+        self.linear1 = torch.nn.Linear(in_channels * args.buffer_size, 8)
         self.bn1 = torch.nn.BatchNorm1d(num_features=8)
         self.linear2 = torch.nn.Linear(8, 6)
         self.bn2 = torch.nn.BatchNorm1d(num_features=6)
